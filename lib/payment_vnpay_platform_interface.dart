@@ -26,4 +26,8 @@ abstract class PaymentVnpayPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<String?> testFunc() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
 }

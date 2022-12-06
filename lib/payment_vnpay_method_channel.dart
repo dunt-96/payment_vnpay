@@ -11,7 +11,14 @@ class MethodChannelPaymentVnpay extends PaymentVnpayPlatform {
 
   @override
   Future<String?> getPlatformVersion() async {
-    final version = await methodChannel.invokeMethod<String>('getPlatformVersion');
+    final version =
+        await methodChannel.invokeMethod<String>('getPlatformVersion');
+    return version;
+  }
+
+  @override
+  Future<String?> testFunc() async {
+    final version = await methodChannel.invokeMethod<String>('testFunc');
     return version;
   }
 }
