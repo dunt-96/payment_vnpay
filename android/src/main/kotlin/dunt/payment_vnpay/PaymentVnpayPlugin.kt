@@ -18,8 +18,6 @@ class PaymentVnpayPlugin: FlutterPlugin, MethodCallHandler {
   /// This local reference serves to register the plugin with the Flutter Engine and unregister it
   /// when the Flutter Engine is detached from the Activity
   private lateinit var channel : MethodChannel
-  private var activityBinding: ActivityPluginBinding? = null
-  private var flutterPluginBinding: FlutterPlugin.FlutterPluginBinding? = null
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "payment_vnpay")
