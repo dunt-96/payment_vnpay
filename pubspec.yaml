@@ -1,6 +1,6 @@
 name: payment_vnpay
 description: Payment VNPay
-version: 0.0.1+1
+version: 0.0.1+3
 homepage: https://github.com/dunt-96/payment_vnpay.git
 
 environment:
